@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>CSS Combinators</title>
+        <style>
+            div + p{
+                background-color:green;
+            }
+        </style>
+       </head>
+       <body>
+<h2>Adjacent sibling selector (+):</h2>
+<p> The adjacent sibling selector selects all elements that are the adjacent siblings of a specified element.
+    Sibling elements must have the same parent element, and "adjacent" means "immediately following".</p>
+   <h4>Synatx</h4>
+<pre>
+  div + p{
+      color:green;
+  }
+</pre>
+<h1>The code is ..</h1>
+<xmp>   
+    <div>
+        <h1>Heading</h1>
+        <p>first paragraph</p>
+        <p>second paragraph</p>                        
+    </div>
+     <p>third paragraph</p>
+     <div>
+         <p>fourth paragraph</p>
+         <span>
+         <p>fifth paragraph</p>
+         </span>
+     </div>
+     <span>
+         <p>sith paragraph</p>
+     </span>
+     <P>seventh paragraph</P>
+    </xmp>
+  <h1>The Ouput is..</h1> 
+<div>
+    <h3>Heading</h3>
+    <p>first paragraph</p>
+    <p>second paragraph</p>                        
+</div>
+ <p>third paragraph</p>
+ <div>
+     <p>fourth paragraph</p>
+     <span>
+     <p>fifth paragraph</p>
+     </span>
+ </div>
+ <span>
+     <p>sith paragraph</p>
+ </span>
+ <P>seventh paragraph</P>
+</body>
+</html>
